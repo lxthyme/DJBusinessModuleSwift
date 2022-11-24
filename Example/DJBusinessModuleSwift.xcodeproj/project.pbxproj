@@ -13,7 +13,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6C6969F2B1B8687D330D7F4A /* Pods_DJBusinessModuleSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE8AADAEC4116360125F7CA /* Pods_DJBusinessModuleSwift_Tests.framework */; };
 		CCD20C0B25A37AAC9B81E6B4 /* Pods_DJBusinessModuleSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC67B70AEF1E6032C4C0639 /* Pods_DJBusinessModuleSwift_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35ADCE84DF02ADA3662CF5A9 /* Pods-DJBusinessModuleSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJBusinessModuleSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DJBusinessModuleSwift_Tests/Pods-DJBusinessModuleSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4075CE77024A2CB6965D9AE5 /* Pods-DJBusinessModuleSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJBusinessModuleSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-DJBusinessModuleSwift_Example/Pods-DJBusinessModuleSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		44251AFCE9D95E61495D23A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DJBusinessModuleSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJBusinessModuleSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +41,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		856807511A9E5D3B7AD22A34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		910F878053E1F1920D3AB45A /* Pods-DJBusinessModuleSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJBusinessModuleSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-DJBusinessModuleSwift_Example/Pods-DJBusinessModuleSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		94ACA0BD718EF790A360C0E2 /* Pods-DJBusinessModuleSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJBusinessModuleSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-DJBusinessModuleSwift_Tests/Pods-DJBusinessModuleSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CC86D8F954982994CA66F7DA /* DJBusinessModuleSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DJBusinessModuleSwift.podspec; path = ../DJBusinessModuleSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DCC67B70AEF1E6032C4C0639 /* Pods_DJBusinessModuleSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJBusinessModuleSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFE8AADAEC4116360125F7CA /* Pods_DJBusinessModuleSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJBusinessModuleSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6969F2B1B8687D330D7F4A /* Pods_DJBusinessModuleSwift_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +139,6 @@
 			children = (
 				910F878053E1F1920D3AB45A /* Pods-DJBusinessModuleSwift_Example.debug.xcconfig */,
 				4075CE77024A2CB6965D9AE5 /* Pods-DJBusinessModuleSwift_Example.release.xcconfig */,
-				35ADCE84DF02ADA3662CF5A9 /* Pods-DJBusinessModuleSwift_Tests.debug.xcconfig */,
-				94ACA0BD718EF790A360C0E2 /* Pods-DJBusinessModuleSwift_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				DCC67B70AEF1E6032C4C0639 /* Pods_DJBusinessModuleSwift_Example.framework */,
-				EFE8AADAEC4116360125F7CA /* Pods_DJBusinessModuleSwift_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,7 +177,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DJBusinessModuleSwift_Tests" */;
 			buildPhases = (
-				4621B621D34DA50BE5845EC6 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -263,28 +254,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4621B621D34DA50BE5845EC6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DJBusinessModuleSwift_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A7A444479BE65A6AA4B0E1D1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,7 +270,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -314,7 +282,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -528,7 +495,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35ADCE84DF02ADA3662CF5A9 /* Pods-DJBusinessModuleSwift_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -551,7 +517,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94ACA0BD718EF790A360C0E2 /* Pods-DJBusinessModuleSwift_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

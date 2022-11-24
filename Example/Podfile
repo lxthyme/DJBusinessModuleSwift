@@ -1,19 +1,33 @@
-source 'https://cdn.cocoapods.org'
+#source 'https://cdn.cocoapods.org'
 
 use_frameworks!
 platform :ios, '11.0'
 
-#plugin 'cocoapods-imy-bin'
-#use_binaries!
+plugin 'cocoapods-imy-bin'
+use_binaries!
 
 target 'DJBusinessModuleSwift_Example' do
   pod 'DJBusinessModuleSwift', :path => '../'
 
-  pod 'RxNetworks', :git => 'git@github.com:yangKJ/RxNetworks.git'
+  # pod 'RxNetworks', :git => 'git@github.com:yangKJ/RxNetworks.git'
 
-  target 'DJBusinessModuleSwift_Tests' do
-    inherit! :search_paths
+  # target 'DJBusinessModuleSwift_Tests' do
+  #   inherit! :search_paths
+  # end
+end
 
-    
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      print('\n>>>[1]: ', target, "\tconfig: ", config, "\n")
+      #  if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 9.0
+      #    config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      #  end
+      #  if !avoid_warning_list.include?(pod.name)
+      #    config.build_settings['SWIFT_SUPPRESS_WARNINGS'] = 'YES'
+      #    config.build_settings['GCC_WARN_UNUSED_VARIABLE'] = 'YES'
+      #  end
+      config.build_settings['VALID_ARCHS'] = 'arm64'
+    end
   end
 end
