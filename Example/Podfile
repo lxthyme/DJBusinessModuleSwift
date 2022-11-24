@@ -9,6 +9,8 @@ platform :ios, '11.0'
 target 'DJBusinessModuleSwift_Example' do
   pod 'DJBusinessModuleSwift', :path => '../'
 
+  pod 'RxNetworks', :git => 'git@github.com:yangKJ/RxNetworks.git'
+
   target 'DJBusinessModuleSwift_Tests' do
     inherit! :search_paths
 
