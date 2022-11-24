@@ -6,12 +6,12 @@
 //  Copyright © 2022 bailian. All rights reserved.
 //
 import UIKit
-import RxSwift
-import Alamofire
-import HandyJSON
-import Moya
-import Toast_Swift
-import SnapKit
+// import RxSwift
+// import Alamofire
+// import HandyJSON
+// import Moya
+// import Toast_Swift
+// import SnapKit
 // import YYCache
 
 open class LXTestVC: UIViewController {
@@ -78,8 +78,8 @@ private extension LXTestVC {
     }
 
     func masonry() {
-        btnRxNetworks.snp.makeConstraints {
-            $0.center.equalToSuperview()
-        }
+        // btnRxNetworks.snp.makeConstraints {
+        //     $0.center.equalToSuperview()
+        // }
     }
 }
