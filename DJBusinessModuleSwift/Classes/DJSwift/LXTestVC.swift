@@ -11,24 +11,38 @@ import Alamofire
 import HandyJSON
 import Moya
 import Toast_Swift
+import SnapKit
 // import YYCache
-class LXTestVC: UIViewController {
+open class LXTestVC: UIViewController {
     // MARK: 📌UI
+    private lazy var btnRxNetworks: UIButton = {
+        let btn = UIButton(type: .custom)
+
+        btn.setTitle("RxNetworks", for: .normal)
+        btn.setTitleColor(.blue, for: .normal)
+
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        btn.layer.masksToBounds = true
+        btn.layer.cornerRadius = 4
+
+        btn.addTarget(self, action: #selector(btnRxNetworks(sender:)), for: .touchUpInside)
+        return btn
+    }()
     // MARK: 🔗Vaiables
     // MARK: 🛠Life Cycle
-    override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    override func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
-    override func viewDidDisappear(_ animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -44,7 +58,12 @@ extension LXTestVC {}
 extension LXTestVC {}
 
 // MARK: 🔐Private Actions
-private extension LXTestVC {}
+private extension LXTestVC {
+    @objc func btnRxNetworks(sender: UIButton) {
+        let vc = HomeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
 
 // MARK: - 🍺UI Prepare & Masonry
 private extension LXTestVC {
@@ -52,10 +71,14 @@ private extension LXTestVC {
         self.view.backgroundColor = .white
         // self.title = "<#title#>"
 
-        // [<#table#>].forEach(self.view.addSubview)
+        [btnRxNetworks].forEach(self.view.addSubview)
 
         masonry()
     }
 
-    func masonry() {}
+    func masonry() {
+        btnRxNetworks.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
+    }
 }
