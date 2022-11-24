@@ -1,5 +1,6 @@
-use_frameworks!
+source 'https://cdn.cocoapods.org'
 
+use_frameworks!
 platform :ios, '11.0'
 
 target 'DJBusinessModuleSwift_Example' do
