@@ -61,8 +61,8 @@ extension LXTestVC {}
 // MARK: 🔐Private Actions
 private extension LXTestVC {
     @objc func btnRxNetworks(sender: UIButton) {
-        let vc = HomeViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        // let vc = HomeViewController()
+        // self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
