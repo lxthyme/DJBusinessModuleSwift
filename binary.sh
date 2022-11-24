@@ -38,7 +38,7 @@ esac
 cd ~/.cocoapods/repos/LXRepo
 git pull origin $branch
 cd -
-pod repo push LXRepo $PROJECT_NAME.podspec --verbose --allow-warnings --use-libraries --sources='git@github.com:lxthyme/LXRepo.git'
+pod repo push LXRepo $PROJECT_NAME.podspec --verbose --allow-warnings --use-libraries # --sources='git@github.com:lxthyme/LXRepo.git'
 #,https://cdn.cocoapods.org/'
 
 # pod bin auto --configuration=Release --env=debug_iphoneos
