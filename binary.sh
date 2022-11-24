@@ -35,10 +35,10 @@ git push origin --tags
 git push origin $branch
 esac
 
-cd ~/.cocoapods/repos/BLRepositories
+cd ~/.cocoapods/repos/LXRepo
 git pull origin $branch
 cd -
-pod repo push BLRepositories $PROJECT_NAME.podspec --verbose --allow-warnings --use-libraries --sources='https://gitlab.bl.com/iOS/BLRepositories.git'
+pod repo push LXRepo $PROJECT_NAME.podspec --verbose --allow-warnings --use-libraries --sources='https://github.com/lxthyme/LXRepo.git'
 #,https://cdn.cocoapods.org/'
 
 pod bin auto --configuration=Release --env=release_iphoneos
