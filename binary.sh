@@ -4,7 +4,7 @@ PROJECT_NAME=${PWD##*/}  #获取当前目录
 
 branch=master
 # branch="damon/07-19_亮证"
-branch="damon/v1"
+branch="damon_v1"
 
 git stash
 git pull origin  --tags
