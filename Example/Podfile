@@ -9,9 +9,7 @@ target 'DJBusinessModuleSwift_Example' do
 
   pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
 
-  target 'DJBusinessModuleSwift_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  # target 'DJBusinessModuleSwift_Tests' do
+  #   inherit! :search_paths
+  # end
 end
