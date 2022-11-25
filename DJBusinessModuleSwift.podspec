@@ -28,10 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/lxthyme/DJBusinessModuleSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
+  s.ios.deployment_target = '11.0'
+  s.static_framework = true
+  s.swift_version = '5.3'
+  #, 'DJBusinessModuleSwift/Classes/RxNetworks/**/*.{h,m,swift}'
+  # s.source_files = 'DJBusinessModuleSwift/Classes/**/*.{h,m,swift}'
   s.source_files = 'DJBusinessModuleSwift/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'DJBusinessModuleSwift' => ['DJBusinessModuleSwift/Assets/*.png']
   # }
@@ -39,4 +42,14 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxNetworks'
+  # s.dependency 'Toast-Swift'
+  # s.dependency 'HandyJSON'
+  # s.dependency 'Moya'
+  # s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  # s.dependency 'YYCache'
+  # s.dependency 'Alamofire'
+  s.dependency 'SnapKit'
+
 end

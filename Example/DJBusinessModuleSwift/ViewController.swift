@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import DJBusinessModuleSwift
 
 class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
+        let vc = LXTestVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
