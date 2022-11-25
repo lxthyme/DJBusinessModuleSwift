@@ -1,9 +1,13 @@
+source 'https://cdn.cocoapods.org'
+
 use_frameworks!
 
 platform :ios, '12.0'
 
 target 'DJBusinessModuleSwift_Example' do
   pod 'DJBusinessModuleSwift', :path => '../'
+
+  pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
 
   target 'DJBusinessModuleSwift_Tests' do
     inherit! :search_paths
