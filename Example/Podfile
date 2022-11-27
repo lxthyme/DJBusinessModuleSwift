@@ -3,14 +3,17 @@ source 'https://cdn.cocoapods.org'
 
 
 use_frameworks!
-use_modular_headers!
+# use_modular_headers!
 platform :ios, '12.0'
 
 target 'DJBusinessModuleSwift_Example' do
+
   pod 'DJBusinessModuleSwift', :path => '../'
 
-  #pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
-  #pod 'RXNetworks'#, :modular_headers => true
+  # pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
+  # pod 'RXNetworks'#, :modular_headers => true
+  # pod 'YYCache'#, :modular_headers => true
+  # pod 'MBProgressHUD'#, :modular_headers => true
 
   # target 'DJBusinessModuleSwift_Tests' do
   #   inherit! :search_paths
@@ -22,16 +25,19 @@ end
 # end
 
 
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
-      # config.build_settings['VALID_ARCHS'] = 'arm64 arm64e x86_64'
-          if config.name == 'Debug'
-            config.build_settings["VALID_ARCHS"] = "arm64 arm64e x86_64 i386"
-          else
-            config.build_settings["VALID_ARCHS"] = "arm64 arm64e"
-          end
-      end
-  end
-end
+# post_install do |installer|
+#   installer.pods_project.targets.each do |target|
+#       target.build_configurations.each do |config|
+#       config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+#       # config.build_settings['VALID_ARCHS'] = 'arm64 arm64e x86_64'
+#           if config.name == 'Debug'
+#             config.build_settings["VALID_ARCHS"] = "arm64 arm64e x86_64 i386"
+#           else
+#             config.build_settings["VALID_ARCHS"] = "arm64 arm64e"
+#           end
+#       end
+#   end
+# end
+
+
+
