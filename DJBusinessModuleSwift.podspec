@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJBusinessModuleSwift'
-  s.version          = '32'
+  s.version          = '33'
   s.summary          = 'A short description of DJBusinessModuleSwift.'
 
 # This description is used to generate tags and improve search results.
@@ -44,12 +44,12 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'RxNetworks'
+  # s.dependency 'RxNetworks'
   # s.dependency 'Toast-Swift'
   # s.dependency 'HandyJSON'
   # s.dependency 'Moya'
   # s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
+  # s.dependency 'RxCocoa'
   # s.dependency 'YYCache'
   # s.dependency 'Alamofire'
   s.dependency 'SnapKit'

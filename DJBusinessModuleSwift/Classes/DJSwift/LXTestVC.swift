@@ -11,7 +11,7 @@ import UIKit
 // import HandyJSON
 // import Moya
 // import Toast_Swift
-// import SnapKit
+import SnapKit
 // import YYCache
 
 open class LXTestVC: UIViewController {
@@ -78,8 +78,8 @@ private extension LXTestVC {
     }
 
     func masonry() {
-        // btnRxNetworks.snp.makeConstraints {
-        //     $0.center.equalToSuperview()
-        // }
+        btnRxNetworks.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
     }
 }
