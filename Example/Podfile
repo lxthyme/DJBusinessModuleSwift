@@ -2,17 +2,21 @@ source 'https://cdn.cocoapods.org'
 
 
 
+use_frameworks!
+#use_modular_headers!
 platform :ios, '12.0'
 
 target 'DJBusinessModuleSwift_Example' do
-  use_frameworks!
-  use_modular_headers!
   pod 'DJBusinessModuleSwift', :path => '../'
 
   #pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
-  pod 'RXNetworks', :modular_headers => true
+  #pod 'RXNetworks'#, :modular_headers => true
 
   # target 'DJBusinessModuleSwift_Tests' do
   #   inherit! :search_paths
   # end
 end
+
+# pre_install do |installer|
+# Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+# end

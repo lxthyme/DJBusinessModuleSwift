@@ -6,10 +6,10 @@ branch=master
 # branch="damon/07-19_亮证"
 branch="damon_v1"
 
-git stash
+# git stash
 git pull origin  --tags
 git pull origin $branch
-git stash pop
+# git stash pop
 
 VersionString=`grep -E 's.version.*=' $PROJECT_NAME.podspec`
 VersionNumber=`tr -cd 0-9 <<<"$VersionString"`
