@@ -1,0 +1,11 @@
+framework module DJBusinessModuleSwift {
+  umbrella header "DJBusinessModuleSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DJBusinessModuleSwift.Swift {
+  header "DJBusinessModuleSwift-Swift.h"
+  requires objc
+}
