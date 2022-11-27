@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJBusinessModuleSwift'
-  s.version          = '30'
+  s.version          = '31'
   s.summary          = 'A short description of DJBusinessModuleSwift.'
 
 # This description is used to generate tags and improve search results.
@@ -33,8 +33,8 @@ TODO: Add long description of the pod here.
   s.swift_version = '5.3'
   #, 'DJBusinessModuleSwift/Classes/RxNetworks/**/*.{h,m,swift}'
   # s.source_files = 'DJBusinessModuleSwift/Classes/**/*.{h,m,swift}'
-  # s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 arm64e x86_64' }
+  # s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
   s.source_files = 'DJBusinessModuleSwift/Classes/**/*'
 
   # s.resource_bundles = {
@@ -52,6 +52,6 @@ TODO: Add long description of the pod here.
   # s.dependency 'RxCocoa'
   # s.dependency 'YYCache'
   # s.dependency 'Alamofire'
-  # s.dependency 'SnapKit'
+  s.dependency 'SnapKit'
 
 end
