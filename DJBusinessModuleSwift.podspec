@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJBusinessModuleSwift'
-  s.version          = '47'
+  s.version          = '48'
   s.summary          = 'A short description of DJBusinessModuleSwift.'
 
 # This description is used to generate tags and improve search results.
