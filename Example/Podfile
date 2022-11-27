@@ -2,18 +2,18 @@ source 'https://cdn.cocoapods.org'
 
 
 
-use_frameworks!
-# use_modular_headers!
 platform :ios, '12.0'
 
 target 'DJBusinessModuleSwift_Example' do
+use_frameworks!
+use_modular_headers!
 
   pod 'DJBusinessModuleSwift', :path => '../'
 
   # pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
-  # pod 'RXNetworks'#, :modular_headers => true
-  # pod 'YYCache'#, :modular_headers => true
-  # pod 'MBProgressHUD'#, :modular_headers => true
+  pod 'RXNetworks'#, :modular_headers => true, :linkage => :static
+  pod 'YYCache'#, :modular_headers => true, :linkage => :static
+  pod 'MBProgressHUD'#, :modular_headers => true, :linkage => :static
 
   # target 'DJBusinessModuleSwift_Tests' do
   #   inherit! :search_paths
