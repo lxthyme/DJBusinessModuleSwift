@@ -1,5 +1,5 @@
 source 'https://cdn.cocoapods.org'
-source 'git@github.com:lxthyme/LXRepo.git'
+# source 'git@github.com:lxthyme/LXRepo.git'
 source 'git@github.com:lxthyme/LXRepo_bin.git'
 
 
@@ -17,7 +17,7 @@ target 'DJBusinessModuleSwift_Example' do
 # use_modular_headers!
 
   pod 'DJBusinessModuleSwift', :path => '../'
-  #pod 'DJBusinessModuleSwift'
+  # pod 'DJBusinessModuleSwift'
 
   # pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
   # pod 'RXNetworks', :modular_headers => true#, :linkage => :static
@@ -47,6 +47,3 @@ end
 #       end
 #   end
 # end
-
-
-
