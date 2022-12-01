@@ -230,7 +230,6 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -252,14 +251,6 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
-
-SWIFT_CLASS("_TtC21DJBusinessModuleSwift10AuthPlugin")
-@interface AuthPlugin : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 @class NSString;
 @class NSBundle;
 @class NSCoder;
@@ -274,7 +265,6 @@ SWIFT_CLASS("_TtC21DJBusinessModuleSwift8LXTestVC")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 
