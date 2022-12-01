@@ -72,7 +72,10 @@ private extension LXTestVC {
         self.view.backgroundColor = .white
         // self.title = "<#title#>"
 
-        [self.btnRxNetworks].forEach(self.view.addSubview)
+        // [self.btnRxNetworks].forEach(self.view.addSubview)
+        self.view.addSubview(self.btnRxNetworks)
+        print("btnRxNetworks: \(self.btnRxNetworks)")
+        print("self.view: \(self.view)")
 
         masonry()
     }
