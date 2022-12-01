@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        // let vc = LXTestVC()
-        // self.navigationController?.pushViewController(vc, animated: true)
+        let vc = LXTestVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
