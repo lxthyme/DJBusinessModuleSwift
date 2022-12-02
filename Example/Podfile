@@ -16,8 +16,8 @@ target 'DJBusinessModuleSwift_Example' do
 # use_frameworks!
 # use_modular_headers!
 
-  # pod 'DJBusinessModuleSwift', :path => '../'
-  pod 'DJBusinessModuleSwift'
+  pod 'DJBusinessModuleSwift', :path => '../'
+  # pod 'DJBusinessModuleSwift'
 
   pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
   pod 'MBProgressHUD', :git => 'git@github.com:jdg/MBProgressHUD.git'
