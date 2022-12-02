@@ -19,7 +19,8 @@ target 'DJBusinessModuleSwift_Example' do
   pod 'DJBusinessModuleSwift', :path => '../'
   # pod 'DJBusinessModuleSwift'
 
-  # pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
+  pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
+  pod 'MBProgressHUD', :git => 'git@github.com:jdg/MBProgressHUD.git'
   # pod 'RXNetworks', :modular_headers => true#, :linkage => :static
   # pod 'YYCache'#, :modular_headers => true#, :linkage => :static
   # pod 'MBProgressHUD'#, :modular_headers => true#, :linkage => :static
