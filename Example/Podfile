@@ -1,6 +1,6 @@
-source 'https://cdn.cocoapods.org'
-# source 'git@github.com:lxthyme/LXRepo.git'
 source 'git@github.com:lxthyme/LXRepo_bin.git'
+# source 'git@github.com:lxthyme/LXRepo.git'
+source 'https://cdn.cocoapods.org'
 
 
 use_frameworks!
@@ -16,11 +16,13 @@ target 'DJBusinessModuleSwift_Example' do
 # use_frameworks!
 # use_modular_headers!
 
-  pod 'DJBusinessModuleSwift', :path => '../'
-  # pod 'DJBusinessModuleSwift'
+  # pod 'DJBusinessModuleSwift', :path => '../'
+  pod 'DJBusinessModuleSwift'
 
   pod 'YYCache', :git => 'git@github.com:ibireme/YYCache.git'
   pod 'MBProgressHUD', :git => 'git@github.com:jdg/MBProgressHUD.git'
+  # pod 'YYCache', :source => 'https://cdn.cocoapods.org'
+  # pod 'MBProgressHUD', :source => 'https://cdn.cocoapods.org'
   # pod 'RXNetworks', :modular_headers => true#, :linkage => :static
   # pod 'YYCache'#, :modular_headers => true#, :linkage => :static
   # pod 'MBProgressHUD'#, :modular_headers => true#, :linkage => :static
